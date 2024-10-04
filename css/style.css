@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
@@ -11,13 +10,9 @@ body, html {
 
 /* Full height image header */
 
-
-
 .w3-bar .w3-button {
   padding: 16px;
 }
-
-
 
 .carousel-item > img{
   width: 100%;
@@ -31,7 +26,6 @@ body, html {
   display: flex;
   align-items: center;
   background-color: black;
-  margin-bottom: 3em;
 }
 
 .carousel-item > div > h5{
@@ -43,8 +37,6 @@ body, html {
   font-size: 1.3em;
   font-weight: 400;
 }
-
-
 
 .button{
   padding: 5px;
