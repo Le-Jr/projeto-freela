@@ -15,7 +15,7 @@ body, html {
 }
 
 #logo{
-  width: 225px;
+  width: 220  px;
   height: 20px;
 }
 
@@ -120,3 +120,4 @@ dialog[open] > button{
   margin-bottom: .5em;
 
 }
+
