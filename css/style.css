@@ -14,9 +14,15 @@ body, html {
   padding: 16px;
 }
   
+.w3-bar {
+  z-index: 1;
+}
+
+
 #logo{
-  width: 220  px;
-  height: 20px;
+  width: 205px;
+  height: 25px;
+  margin-top: 1em;
 }
 
 
