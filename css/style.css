@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 body, html {
@@ -7,17 +10,120 @@ body, html {
 
 /* Full height image header */
 
-
-
 .w3-bar .w3-button {
   padding: 16px;
 }
-
-.black-div{
-  opacity: 30%;
+  
+.w3-bar {
+  z-index: 1;
 }
 
-section > img{
-  width: 500px;
-  height: 50px;
+
+#logo{
+  width: 205px;
+  height: 25px;
+  margin-top: 1em;
 }
+
+
+.carousel-item > img{
+  width: 100%;
+  height: 700px;
+  opacity: 20%;
+}
+
+
+.carousel-item{
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+.carousel-item > div > h5{
+  font-size: 2.6em;
+  font-weight: 800;
+}
+
+.carousel-item > div > p{
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+.button{
+  padding: 5px;
+  border: none;
+  background-color: rgb(4, 4, 83);
+  color:white;
+  border-radius: 10px;
+  width: 180px;
+  height: 60px;
+  margin-top: 1em;
+  font-size: 1.2em;
+
+  transition: ease-in-out;
+  transition-duration: 600ms;
+}
+
+.button:hover{
+  background-color: rgb(12, 12, 165);
+  box-shadow: 2px 2px 15px 1px rgba(255, 255, 255, 0.5);
+  width: 190px;
+  font-size: 1.4em;
+}
+
+
+ .btnModal{
+  padding: 5px;
+  border: none;
+  background-color: rgb(4, 4, 83);
+  color:white;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  margin-top: 1em;
+  font-size: 1em;
+
+  transition: ease-in-out;
+  transition-duration: 600ms;
+}
+
+.btnModal:hover{
+  background-color: rgb(12, 12, 165);
+  box-shadow: 2px 2px 15px 1px rgba(255, 255, 255, 0.5);
+  width: 110px;
+  font-size: 1.2em;
+}
+
+dialog::backdrop{
+  background-color: rgba(65, 63, 63, 0.5);  
+}
+
+dialog[open]{
+  border: none;
+  border-radius: 0.5em;
+  box-shadow: 2px 2px 1em rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 700px;
+} 
+
+dialog[open] > p{
+  font-size: 1.3em;
+  padding: 1em 1em;
+
+}
+
+dialog[open] > h1{
+  margin-bottom: .5em;
+  margin-top: .5em;
+
+}
+
+dialog[open] > button{
+  margin-bottom: .5em;
+
+}
+

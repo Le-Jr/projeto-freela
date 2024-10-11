@@ -1,3 +1,29 @@
+const buttons = document.querySelectorAll(".button"); // Seleciona todos os botões
+const modal = document.querySelector("dialog");
+const modalTitle = document.getElementById("modalTitle");
+const modalContent = document.getElementById("modalContent");
+const closeBtn = document.querySelector(".closeBtn");
+
+buttons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    // Pega os valores do data-* do botão clicado
+    const title = button.getAttribute("data-title");
+    const content = button.getAttribute("data-content");
+
+    // Atualiza o conteúdo do modal
+    modalTitle.textContent = title;
+    modalContent.textContent = content;
+
+    // Abre o modal
+    modal.showModal();
+  });
+});
+
+closeBtn.addEventListener("click", (e) => {
+  modal.close();
+});
+
+
 
 emailjs.init({
     publicKey: 'XmsXrHXLJumUYY0IM',
