@@ -17,6 +17,7 @@ buttons.forEach((button) => {
 
     // Abre o modal
     modal.showModal();
+    modal.scrollTo(0, 0);
   });
 });
 
