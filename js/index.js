@@ -4,6 +4,7 @@ const modalTitle = document.getElementById("modalTitle");
 const modalContent = document.getElementById("modalContent");
 const closeBtn = document.querySelector(".closeBtn");
 
+// carrossel
 buttons.forEach((button) => {
   button.addEventListener("click", (e) => {
     // Pega os valores do data-* do botão clicado
@@ -24,7 +25,7 @@ closeBtn.addEventListener("click", (e) => {
 });
 
 
-
+// lançador de E-mails
 emailjs.init({
     publicKey: 'XmsXrHXLJumUYY0IM',
   });
