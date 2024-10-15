@@ -1,0 +1,18 @@
+.customers{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+}
+.customers_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.customers_item{
+    list-style-type: none;
+}
+.customer_img{
+    width: 200px;
+    height: 200px;
+}
