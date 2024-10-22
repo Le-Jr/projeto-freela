@@ -4,9 +4,10 @@ const modalTitle = document.getElementById("modalTitle");
 const modalContent = document.getElementById("modalContent");
 const closeBtn = document.querySelector(".closeBtn");
 
+
 // carrossel
 buttons.forEach((button) => {
-  button.addEventListener("click", (e) => {
+  button.addEventListener("click", () => {
     // Pega os valores do data-* do botão clicado
     const title = button.getAttribute("data-title");
     const content = button.getAttribute("data-content");
@@ -26,16 +27,15 @@ closeBtn.addEventListener("click", (e) => {
 });
 
 
+
 // lançador de E-mails
 emailjs.init({
     publicKey: 'XmsXrHXLJumUYY0IM',
   });
-emailjs.sendForm('contact_service', 'contact_form', this);
+emailjs.sendForm('contact_service', 'contact_form');
 
-console.log('hw')
 window.onload = function () {
     document.getElementById('contact-form').addEventListener('submit', function (event) {
-        console.log("alo")
         event.preventDefault();
         console.log(emailjs)
         emailjs.sendForm('service_kxd81p4', 'template_do0cnf8', this)
