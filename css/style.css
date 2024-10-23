@@ -28,8 +28,7 @@ body, html {
 
 .carousel-item > img{
   width: 100%;
-  height: 700px;
-  opacity: 70%;
+  height: 400px;
 }
 
 
@@ -128,4 +127,9 @@ dialog[open] > button{
 }
 .carrossel{
   margin-top: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .carousel-item > img{
+    height: 800px;
+  }
 }
