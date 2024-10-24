@@ -1,0 +1,54 @@
+#global-network{
+    height: 5vw;
+    width: 25vw;
+    margin-right: 17%;
+}
+.footer{
+    display: flex;
+}
+.footer-section-one{
+    width: 35%;
+}
+.footer-section-columns{
+    display: flex;
+}
+.logo {
+    display: flex;
+    margin: auto;
+    border-bottom: 2px solid #ffff;
+}
+.icons-social{
+    margin: auto;
+    font-size: 25px;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+.footer-columns {
+    margin: 2.5vw 1vw 2vw 1vw;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.footer-columns a{
+    text-decoration: none;
+    color: #ffff;
+}
+.footer-section-two{
+    width: 45%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+.topo-button{
+    float: right;
+}
+#map {
+    width: 70%;
+}
+.footer-copy{
+    align-self: flex-end;
+    font-size: .75vw;
+    float: inline-end;
+    margin-top: 20%;
+  }
