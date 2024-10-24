@@ -5,9 +5,10 @@
 }
 .footer{
     display: flex;
+    padding: 10px;
 }
 .footer-section-one{
-    width: 35%;
+    width: 40%;
 }
 .footer-section-columns{
     display: flex;
@@ -19,14 +20,17 @@
 }
 .icons-social{
     margin: auto;
-    font-size: 25px;
+    font-size: 1.5vw;
 }
 .title{
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 600;
 }
+.subtitle{
+    font-size: 1vw;
+}
 .footer-columns {
-    margin: 2.5vw 1vw 2vw 1vw;
+    margin: 2.5vw 3vw 2vw 1vw;
     display: flex;
     flex-direction: column;
     width: 30%;
@@ -42,13 +46,70 @@
 }
 .topo-button{
     float: right;
+    background-color: #ffff;
+    border-radius: 100%;
+    margin-right: 5%;
+    margin-top: -4rem;
+    animation: scroll 3s ease infinite;
+}
+@keyframes scroll {
+    0%{
+        transform: translateY(0);
+    }
+
+    30%{
+        transform: translateY(2.75rem);
+    }
+}
+.topo-button i{
+    color: #000000;
+    padding: 10px;
 }
 #map {
     width: 70%;
 }
 .footer-copy{
     align-self: flex-end;
-    font-size: .75vw;
+    font-size: .9vw;
     float: inline-end;
     margin-top: 20%;
+  }
+
+  @media (max-width : 850px) {
+    .footer-section-columns{
+        display: list-item;
+        justify-items: center;
+    }
+    .title{
+        font-size: 2.2vw;
+    }
+    .subtitle{
+        font-size: 1.5vw;
+    }
+    .footer-copy{
+        font-size: 1vw;
+        margin-top: 20%;
+    } 
+    .footer-section-two{
+        margin-top: 0%;
+    }
+    .icons-social{
+        font-size: 2vw;
+    }
+    .endereco{
+        font-size: 2vw;
+        line-height: 50%;
+    }
+    .topo-button{
+        font-size: 2vw;
+        
+    }
+    @keyframes scroll {
+        0%{
+            transform: translateY(0);
+        }
+    
+        30%{
+            transform: translateY(1.5rem);
+        }
   }
