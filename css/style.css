@@ -134,3 +134,15 @@ dialog[open] > button{
     height: 800px;
   }
 }
+
+.barra{
+  animation: barra 4s;
+}
+@keyframes barra {
+    from{
+      width: 0%;
+    }
+    to{
+      width: 100%;
+    }
+}
