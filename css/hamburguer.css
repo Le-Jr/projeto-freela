@@ -1,0 +1,32 @@
+.navBar{
+    transition: 1s;
+    display: flex;
+    position: absolute;
+    left: 100vh;
+
+}
+.active-hamburguer {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    color: white;
+    background-color: rgba(168, 160, 160, 0.8);    
+    margin-top: 15px;
+    left: unset;
+    border-radius: 0 0 0 15px;
+    transition: 1s;
+    transition: 1s;
+
+}
+
+@media screen and (max-width:600px) {
+    #nav-btn{
+        background-color: unset;
+    }
+}
+@media screen and (min-width:600px) {
+    div.navBar{
+        position: static;
+    }
+}

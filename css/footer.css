@@ -1,0 +1,190 @@
+#global-network {
+    height: 5vw;
+    width: 25vw;
+    margin-right: 17%;
+}
+
+.footer {
+    display: flex;
+    padding: 10px;
+}
+
+.footer-section-one {
+    width: 40%;
+}
+
+.footer-section-columns {
+    display: flex;
+    list-style-type: none;
+}
+
+.logo {
+    display: flex;
+    margin: auto;
+    border-bottom: 2px solid #ffff;
+}
+
+.icons-social {
+    margin: auto;
+    font-size: 1.5vw;
+}
+
+.title {
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 1vw;
+}
+
+.footer-columns {
+    margin: 2.5vw 3vw 2vw 1vw;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.footer-columns a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.footer-section-two {
+    width: 45%;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.topo-button {
+    float: right;
+    background-color: #ffff;
+    border-radius: 100%;
+    margin-right: 5%;
+    margin-top: -4rem;
+    animation: scroll 3s ease infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(2.75rem);
+    }
+}
+
+.topo-button i {
+    color: #000000;
+    padding: 10px;
+}
+
+#map {
+    width: 70%;
+}
+
+.footer-copy {
+    align-self: flex-end;
+    font-size: .9vw;
+    float: inline-end;
+    margin-top: 20%;
+}
+
+.btn-outline-light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+
+@media (max-width : 850px) {
+    .footer {
+        display: list-item;
+        flex-direction: column;
+        margin: auto;
+        justify-items: center;
+    }
+
+    .footer span {
+        margin-top: 2vw;
+    }
+
+    .footer-section-columns {
+        display: flex;
+        justify-items: center;
+        margin: auto;
+        flex-direction: column;
+    }
+
+    #contato-footer {
+        margin: auto;
+    }
+
+    .footer-columns {
+        margin: auto;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 3vw;
+    }
+
+    .subtitle {
+        font-size: 2vw;
+    }
+
+    .footer-copy {
+        font-size: 1vw;
+    }
+
+    .footer-section-two {
+        justify-items: center;
+        margin: 5% auto auto;
+    }
+
+    .icons-social {
+        font-size: 2vw;
+        margin-left: -10%;
+    }
+
+    .endereco {
+        font-size: 2vw;
+        line-height: 50%;
+    }
+
+    .topo-button {
+        font-size: 2vw;
+        margin-top: -150%;
+        margin-right: -50%;
+    }
+
+    .btn-outline-light {
+        width: 100px;
+        height: 40px;
+        padding: 5px 5px;
+        margin-top: .8em;
+        margin-left: 25%;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateY(0);
+        }
+
+        30% {
+            transform: translateY(1.5rem);
+        }
+    }
+
+    #global-network {
+        height: 8vw;
+        width: 40vw;
+    }
+
+    .footer-section-one {
+        width: 60%;
+    }
+
+
+}
