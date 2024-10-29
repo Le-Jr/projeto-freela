@@ -179,3 +179,18 @@ dialog[open]>button {
     width: 100%;
   }
 }
+
+.closeDiv{
+  width: 100%;
+  justify-items: right;
+}
+
+.closeBtn{
+  justify-self: unset;
+  border: none;
+  background: none;
+  font-size: 25px;
+}
+.closeBtn :hover{
+  opacity: 0.6;
+}

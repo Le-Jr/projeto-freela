@@ -21,7 +21,7 @@
   <link rel="preload" href="./css/customers.css" as="style" onload="this.rel='stylesheet'">
   <link rel="preload" href="./css/footer.css" as="style" onload="this.rel='stylesheet'">
   <link rel="preload" href="./styles.css" as="style" onload="this.rel='stylesheet'">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.0/css/font-awesome.min.css">
 
   <!-- social media meta tags -->
   <meta property="og:title" content="Global Network || empresa de tecnologia">
@@ -135,9 +135,12 @@
 
   <dialog>
     <!-- Conteúdo do modal que será alterado dinamicamente -->
+    <div class="closeDiv">
+      <button class="closeBtn"><i class="fa fa-times"></i></button>
+    </div>
     <h1 id="modalTitle">Título padrão</h1>
     <p id="modalContent">Conteúdo padrão</p>
-    <button class="closeBtn btnModal">Fechar</button>
+    <button class="btnModal">Saiba Mais</button>
   </dialog>
 
 
@@ -239,12 +242,22 @@
           <img src="./img/REDEDOR_PNG.png" alt="imagem ilustrativa da Rede D'or" class="customer_img">
         </li>
       </ul>
-
-
     </section>
 
 
-
+    <!--Services Section-->
+    <section class="services-section">
+      <h2> Serviços </h2>
+      <div class="services-container">
+        <div class="services-name">
+          <button>Consultoria Ágil</button>
+          <button>Consultoria call-center</button>
+          <button>Sites</button>
+          <button>Sistemas</button>
+          <button>Filmagens Drones</button>
+        </div>
+      </div>
+    </section>
 
     <!-- Skills Section -->
     <div class="w3-container w3-light-grey w3-padding-64 barraCompetencia" id="skills">
@@ -256,7 +269,7 @@
         <div class="w3-col m6">
           <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Front-end</p>
           <div class="w3-grey">
-            <div class="w3-container w3-dark-grey w3-center" style="max-width:90%">70%</div>
+            <div class="w3-container w3-dark-grey w3-center" style="max-width:70%">70%</div>
           </div>
           <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Back-end</p>
           <div class="w3-grey">
@@ -339,7 +352,7 @@
           <i class="fa fa-arrow-up"></i>
         </a>
         <span>
-          <i class="fa fa-location"></i>
+          <i class="fa fa-map-marker"></i>
           Avenida Paulista, 1106, São Paulo/SP
         </span>
         <div>

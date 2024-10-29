@@ -53,7 +53,6 @@ const barraCompetencia = document.querySelector('.barraCompetencia');
 const competencia = document.querySelectorAll('.w3-dark-grey');
 
 const myObserver = new IntersectionObserver((entries) =>{
-  console.log(entries)
   if(entries[0].isIntersecting){
     for ( var i = 0; i < competencia.length; i++) {
       competencia[i].classList.add('barra');    
@@ -62,3 +61,8 @@ const myObserver = new IntersectionObserver((entries) =>{
   }
 })
 myObserver.observe(barraCompetencia);
+
+
+// Servicos 
+
+
