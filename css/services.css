@@ -1,5 +1,36 @@
 .services-section{
-    margin: auto;
-    background-color: blueviolet;
-    height: 100%;
+    justify-items: center;
+    margin: 3rem;
 }
+
+.servicesContent{
+    margin: 2rem;
+    display: none;
+    justify-items: center;
+}
+
+.services-name{
+    margin: 2rem;
+}
+
+.servicesLinks{
+    border: none;
+    background-color: #ffff;
+    font-weight: 600;
+    margin-right: 3rem;
+}
+
+.activeServices{
+    background-color: #000;
+    color: #ffff;
+}
+
+.servicesContent-itens{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 6rem;
+    margin: 10% auto 10%;
+    text-align: initial;
+    padding-left: 10%;
+}
+

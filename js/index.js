@@ -64,5 +64,24 @@ myObserver.observe(barraCompetencia);
 
 
 // Servicos 
+function openService(evt, ServiceName) {
+  var i, servicesContent, servicesLinks;
+  //Pega o classe dos servicos e remove o display das demais
+  servicesContent = document.getElementsByClassName("servicesContent");
+  for (i = 0; i < servicesContent.length; i++) {
+    servicesContent[i].style.display = "none";
+  }
+  //Pega os links do servicos e deixa ativado o link clicado
+  servicesLinks = document.getElementsByClassName("servicesLinks");
+  for (i = 0; i < servicesLinks.length; i++) {
+    servicesLinks[i].className = servicesLinks[i].className.replace(" activeServices", "");
+  }
+  document.getElementById(ServiceName).style.display = "block";
+  evt.currentTarget.className += " activeServices";
+}
 
-
+function redirecionarServico(){
+  modal.close();
+  const serviceName = modalTitle.textContent.toLocaleLowerCase().split(" ").join("-");
+  openService(event , serviceName);
+}
