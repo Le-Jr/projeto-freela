@@ -89,7 +89,7 @@ html {
 }
 
 
-.btnModal {
+.btnModal{
   padding: 5px;
   border: none;
   background-color: rgb(4, 4, 83);
@@ -99,6 +99,7 @@ html {
   height: 40px;
   margin-top: 1em;
   font-size: 1em;
+  
 
   transition: ease-in-out;
   transition-duration: 600ms;
@@ -109,6 +110,10 @@ html {
   box-shadow: 2px 2px 15px 1px rgba(255, 255, 255, 0.5);
   width: 110px;
   font-size: 1.2em;
+}
+
+.btnA{
+  text-align: center;
 }
 
 dialog::backdrop {

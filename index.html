@@ -140,8 +140,7 @@
     </div>
     <h1 id="modalTitle">Título padrão</h1>
     <p id="modalContent">Conteúdo padrão</p>
-    <a href="#services" class="btnModal" onclick="redirecionarServico()">
-      Saiba Mais</a>
+    <a href="#services" id="botaoModal" class="btnModal btnA" onclick="redirecionarServico()">Saiba Mais</a>
   </dialog>
 
 
@@ -251,58 +250,52 @@
       <h2> Serviços </h2>
       <div class="services-container">
         <div class="services-name">
-          <button class="servicesLinks" onclick="openService(event , 'consultoria-ágil')">Consultoria Ágil</button>
+          <button class="servicesLinks activeServices" onclick="openService(event , 'consultoria-agil')">Consultoria Ágil</button>
           <button class="servicesLinks" onclick="openService(event , 'consultoria-em-call-center')">Consultoria call-center</button>
           <button class="servicesLinks" onclick="openService(event , 'desenvolvimento-de-sites')">Sites</button>
           <button class="servicesLinks" onclick="openService(event , 'desenvolvimento-de-sistemas')">Sistemas</button>
           <button class="servicesLinks" onclick="openService(event , 'filmagens-com-drone')">Filmagens Drones</button>
         </div>
 
-        <div id="consultoria-ágil" class="servicesContent">
+        <div id="consultoria-agil" class="servicesContent">
           <h3>Consultoria Ágil</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, dolore.</p>
+          <p>Trabalhamos com as seguintes metodologias e prestamos os serviços abaixo:</p>
           <div class="servicesContent-itens">
             <div class="services-itens">
-              <i class="fa fa-check"></i> 
               <div class="services-itens-content">
-                <h1 class="service-title">item 1</h1>
-                <p class="service-subtitle">Lorem ipsum dolor sit amet consectetur.</p>
+                <h4 class="service-title"><i class="fa fa-refresh"></i>Scrum</h4>
+                <p class="service-subtitle">Um framework ágil com ciclos curtos (sprints), papéis bem definidos e foco em produtividade e colaboração para entregas contínuas e de alta qualidade.</p>
               </div>
             </div>
             <div class="services-itens">
-              <i class="fa fa-check"></i> 
               <div class="services-itens-content">
-                <h1 class="service-title">item 2</h1>
-                <p class="service-subtitle">Lorem ipsum dolor sit amet consectetur.
+                <h4 class="service-title"><i class="fa fa-check"></i>Kanban</h4>
+                <p class="service-subtitle">Método visual de gestão de fluxo de trabalho que garante agilidade e eficiência, permitindo melhorias contínuas e o equilíbrio de demandas.
                 </p>
               </div>
             </div>
             <div class="services-itens">
-              <i class="fa fa-check"></i>
               <div class="services-itens-content">
-                <h1 class="service-title">item 3</h1>
-                <p class="service-subtitle">Lorem ipsum dolor sit amet consectetur.</p>
+                <h4 class="service-title"><i class="fa fa-circle-o-notch"></i>Agile</h4>
+                <p class="service-subtitle">Uma abordagem focada em flexibilidade e entregas incrementais para atender rapidamente às mudanças de mercado e expectativas dos clientes.</p>
               </div>
             </div>
             <div class="services-itens">
-              <i class="fa fa-check"></i>
               <div class="services-itens-content">
-                <h1 class="service-title">item 4</h1>
-                <p class="service-subtitle">Lorem ipsum dolor sit amet consectetur.</p>
+                <h4 class="service-title"><i class="fa fa-check"></i>Waterfall</h4>
+                <p class="service-subtitle"> Modelo sequencial com fases bem definidas; ideal para projetos com requisitos fixos, mas menos adaptável a mudanças rápidas.</p>
               </div>
             </div>
             <div class="services-itens">
-              <i class="fa fa-check"></i> 
               <div class="services-itens-content">
-                <h1 class="service-title">item 5</h1>
-                <p class="service-subtitle">Lorem ipsum dolor sit amet consectetur.</p>
+                <h4 class="service-title"><i class="fa fa-angle-double-up"></i>Apoio na Melhoria Contínua e Retrospectivas</h4>
+                <p class="service-subtitle">Facilitação de retrospectivas e implementação de práticas de melhoria contínua, para promover o aprendizado e a evolução do time.</p>
               </div>
             </div>
             <div class="services-itens">
-              <i class="fa fa-check"></i> 
               <div class="services-itens-content">
-                <h1 class="service-title">item 6</h1>
-                <p class="service-subtitle">Lorem ipsum dolor sit amet consectetur.</p>
+                <h4 class="service-title"><i class="fa fa-wrench"></i>Ferramentas e Automação Ágil</h4>
+                <p class="service-subtitle">Consultoria em ferramentas ágeis (como Jira, Trello, Confluence, etc.) e implementação de automações que suportem o fluxo de trabalho ágil..</p>
               </div>
             </div>
           </div>
@@ -310,18 +303,139 @@
         
         <div id="consultoria-em-call-center" class="servicesContent">
           <h3>Consultoria call-center</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <div class="servicesContent-itens">
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Capacitação de atendimento</h1>
+                <p class="service-subtitle">Formação em habilidades de atendimento, como comunicação, resolução de conflitos, empatia, e técnicas de atendimento ativo e passivo.</p>
+              </div>
+            </div>
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Ferramentas de CRM e Automação</h4>
+                <p class="service-subtitle">Auxílio na seleção, configuração e treinamento de ferramentas de CRM (Customer Relationship Management) e automação para otimizar o atendimento, registrar interações e analisar dados de clientes.</p>
+              </div>
+            </div>
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Melhoria de Processos</h4>
+                <p class="service-subtitle">Análise e mapeamento dos processos atuais para identificar gargalos e oportunidades de otimização, garantindo que as operações sejam mais eficientes e o atendimento seja de qualidade</p>
+              </div>
+            </div>
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Scripts e Protocolos</h4>
+                <p class="service-subtitle">Criação de roteiros e protocolos adaptados às necessidades específicas do call center, garantindo consistência e efetividade na comunicação com os clientes.</p>
+              </div>
+            </div>
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Atendimento Digital e Chatbots</h4>
+                <p class="service-subtitle">Implementação e configuração de soluções de atendimento digital, incluindo chatbots e assistentes virtuais, para responder a demandas mais frequentes e liberar agentes para atendimentos mais complexos.</p>
+              </div>
+            </div>
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Análise e Melhoria de Experiência do Cliente </h4>
+                <p class="service-subtitle">esquisa e análise da experiência do cliente durante o atendimento, identificando pontos críticos e propondo melhorias para aumentar a satisfação e a fidelidade do cliente.</p>
+              </div>
+            </div>
+          </div>
         </div>
         
         <div id="desenvolvimento-de-sites" class="servicesContent">
           <h3>Sites</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div class="servicesContent-itens">
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Sites institucionais</h1>
+                <p class="service-subtitle">Criação de sites corporativos para fortalecer a presença online e transmitir a identidade da marca com páginas informativas e design profissional.</p>
+              </div>
+            </div>
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Otimização e SEO para Motores de Busca</h4>
+                <p class="service-subtitle">Configuração e adaptação do site para otimização nos motores de busca, melhorando o ranqueamento e visibilidade orgânica.</p>
+              </div>
+            </div>
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Sites Responsivos e Mobile First</h4>
+                <p class="service-subtitle">Desenvolvimento de sites adaptados para dispositivos móveis, garantindo uma experiência de navegação fluida em qualquer tela, desde desktops até smartphones.</p>
+              </div>
+            </div>
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Aplicações web</h4>
+                <p class="service-subtitle">Criação de aplicações interativas e personalizadas, focadas em funcionalidades específicas, para proporcionar uma experiência de uso rica e intuitiva.</p>
+              </div>
+            </div>
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Landing Pages</h4>
+                <p class="service-subtitle">Páginas focadas em conversão para campanhas específicas de marketing, ideais para captar leads, promover eventos ou novos produtos.</p>
+              </div>
+            </div>
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Integração de APIs</h4>
+                <p class="service-subtitle">Conexão do site com APIs e outras plataformas, como ERPs, CRMs, gateways de pagamento e sistemas de análise, para automatizar e ampliar funcionalidades.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div id="desenvolvimento-de-sistemas" class="servicesContent">
           <h3>Sistemas</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda.</p>
+          <div class="servicesContent-itens">
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Sistemas Personalizados</h1>
+                <p class="service-subtitle">Criação de sistemas sob medida para atender a necessidades específicas do cliente, garantindo funcionalidades exclusivas e integração com processos internos.</p>
+              </div>
+            </div>
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Gestão de Recursos Humanos</h4>
+                <p class="service-subtitle">Soluções para gerenciar folha de pagamento, benefícios, recrutamento, avaliações de desempenho e outros processos de RH.
+                </p>
+              </div>
+            </div>
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Automação de Processos</h4>
+                <p class="service-subtitle">Desenvolvimento de sistemas para automatizar fluxos de trabalho, reduzindo erros, tempo de execução e custo operacional.</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div id="filmagens-com-drone" class="servicesContent">
           <h3>Filmagens Drones</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas, nesciunt?</p>
+          <div class="servicesContent-itens">
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Filmagem Aérea para Eventos e Publicidade</h1>
+                <p class="service-subtitle">Captura de imagens e vídeos em alta definição para eventos, comerciais, e campanhas de marketing, proporcionando ângulos únicos e visuais impactantes.</p>
+              </div>
+            </div>
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Inspeções Aéreas e Monitoramento de Infraestruturas</h4>
+                <p class="service-subtitle">Utilização de drones para inspeção de áreas de difícil acesso, como telhados, torres, painéis solares e linhas de transmissão, facilitando a identificação de problemas e monitoramento contínuo.</p>
+              </div>
+            </div>
+            <div class="services-itens">
+              <div class="services-itens-content">
+                <h4 class="service-title"><i class="fa fa-check"></i>Fotografia e Filmagem Imobiliária</h4>
+                <p class="service-subtitle">Produção de imagens aéreas para destacar propriedades em anúncios imobiliários, oferecendo uma visão completa do imóvel e da área ao redor para potencializar a apresentação de vendas.</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

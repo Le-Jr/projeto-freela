@@ -9,8 +9,13 @@
     justify-items: center;
 }
 
+.servicesContent h3{
+    margin-top: 5%;
+}
+
 .services-name{
     margin: 2rem;
+    justify-self: center;
 }
 
 .servicesLinks{
@@ -20,17 +25,56 @@
     margin-right: 3rem;
 }
 
+#consultoria-agil{
+    display: block;
+}
+
+.services-itens i{
+    font-size: 3vh;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    border-radius: 100%;
+    margin-right: 2vh;
+}
+
+.service-title{
+    font-weight: 600;
+    line-height: 5vh;
+}
+
+.servicesLinks button :hover{
+    background-color: #000;
+    color: #ffff;
+    opacity: 0.8;
+}
+
 .activeServices{
     background-color: #000;
     color: #ffff;
+    padding: 10px;
+    border-radius: 15px;
+    justify-items: center;
 }
 
 .servicesContent-itens{
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 6rem;
-    margin: 10% auto 10%;
+    grid-gap: 2.5rem;
+    margin: 2% auto 10%;
     text-align: initial;
-    padding-left: 10%;
+    padding: 4% 4%;
+    border-radius: 15px;
+    max-width: 80%;
+}
+
+.servicesContent-itens div{
+    background-color: #ffff;
+    padding: .5rem;
+    border-radius: 15px;
+}
+
+.services-itens{
+    border: solid 2px #0000003c;
 }
 

@@ -57,7 +57,6 @@ const myObserver = new IntersectionObserver((entries) =>{
     for ( var i = 0; i < competencia.length; i++) {
       competencia[i].classList.add('barra');    
     } 
-
   }
 })
 myObserver.observe(barraCompetencia);
@@ -78,10 +77,11 @@ function openService(evt, ServiceName) {
   }
   document.getElementById(ServiceName).style.display = "block";
   evt.currentTarget.className += " activeServices";
+  document.getElementById('botaoModal').classList.remove('activeServices');
 }
 
 function redirecionarServico(){
   modal.close();
-  const serviceName = modalTitle.textContent.toLocaleLowerCase().split(" ").join("-");
+  const serviceName = modalTitle.textContent.toLocaleLowerCase().split(" ").join("-").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   openService(event , serviceName);
 }
