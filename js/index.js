@@ -30,7 +30,7 @@ closeBtn.addEventListener("click", (e) => {
 
 // lançador de E-mails
 emailjs.init({
-    publicKey: 'XmsXrHXLJumUYY0IM',
+    publicKey: 'dghQi-EOdR6yvYSzA',
   });
 emailjs.sendForm('contact_service', 'contact_form');
 
@@ -38,7 +38,7 @@ window.onload = function () {
     document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
         console.log(emailjs)
-        emailjs.sendForm('service_kxd81p4', 'template_do0cnf8', this)
+        emailjs.sendForm('service_ggficvm', 'template_wkf10lt', this)
             .then(() => {
                 console.log('SUCCESS!');
             }, (error) => {
