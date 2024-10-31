@@ -14,15 +14,17 @@
 }
 
 .services-name{
-    margin: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     justify-self: center;
+    gap: 10px;
 }
 
 .servicesLinks{
     border: none;
     background-color: #ffff;
     font-weight: 600;
-    margin-right: 3rem;
 }
 
 #consultoria-agil{
@@ -41,6 +43,15 @@
 .service-title{
     font-weight: 600;
     line-height: 5vh;
+}
+
+.service-title{
+    font-weight: 600;
+    line-height: 5vh;
+}
+
+.service-title i::before{
+    margin: auto;
 }
 
 .servicesLinks button :hover{
@@ -78,3 +89,34 @@
     border: solid 2px #0000003c;
 }
 
+@media (max-width : 1350px){
+    .servicesContent-itens{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width : 850px){
+    .servicesContent-itens{
+        grid-template-columns: auto;
+        max-width: 70%;
+    }
+
+}
+
+@media (max-width : 650px){
+    .servicesContent-itens{
+        max-width: 100%;
+    }
+}
+
+@media (max-width : 450px){
+    .servicesContent-itens{
+        width : 300px
+    }
+    .servicesContent-itens h4{
+        font-size: 100%;
+    }
+    .servicesContent-itens p{
+        font-size: 80%;
+    }
+}
