@@ -203,3 +203,36 @@ dialog a{
 .closeBtn :hover{
   opacity: 0.6;
 }
+#about{
+  padding:128px 16px
+}
+.card-division{
+  padding:128px 16px;
+}
+.projects{
+  margin-top:64px
+}
+.cardFE{
+  max-width:70%
+}
+.cardBE{
+  max-width:85%
+}
+.cardDS{
+  max-width:65%
+}
+.cardMA{
+  max-width:100%
+}
+#contato{
+  padding:128px 16px"
+}
+.form-contato{
+  padding:128px 16px;
+}
+.form-button{
+  margin-top: 1em;
+}
+.fa-whatsapp{
+  margin-top:16px
+}
