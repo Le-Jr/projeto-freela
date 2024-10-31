@@ -53,12 +53,35 @@ const barraCompetencia = document.querySelector('.barraCompetencia');
 const competencia = document.querySelectorAll('.w3-dark-grey');
 
 const myObserver = new IntersectionObserver((entries) =>{
-  console.log(entries)
   if(entries[0].isIntersecting){
     for ( var i = 0; i < competencia.length; i++) {
       competencia[i].classList.add('barra');    
     } 
-
   }
 })
 myObserver.observe(barraCompetencia);
+
+
+// Servicos 
+function openService(evt, ServiceName) {
+  var i, servicesContent, servicesLinks;
+  //Pega o classe dos servicos e remove o display das demais
+  servicesContent = document.getElementsByClassName("servicesContent");
+  for (i = 0; i < servicesContent.length; i++) {
+    servicesContent[i].style.display = "none";
+  }
+  //Pega os links do servicos e deixa ativado o link clicado
+  servicesLinks = document.getElementsByClassName("servicesLinks");
+  for (i = 0; i < servicesLinks.length; i++) {
+    servicesLinks[i].className = servicesLinks[i].className.replace(" activeServices", "");
+  }
+  document.getElementById(ServiceName).style.display = "block";
+  evt.currentTarget.className += " activeServices";
+  document.getElementById('botaoModal').classList.remove('activeServices');
+}
+
+function redirecionarServico(){
+  modal.close();
+  const serviceName = modalTitle.textContent.toLocaleLowerCase().split(" ").join("-").normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  openService(event , serviceName);
+}

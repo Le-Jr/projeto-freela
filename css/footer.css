@@ -117,8 +117,13 @@
         flex-direction: column;
     }
 
-    #contato-footer {
+    #contato-footer a{
         margin: auto;
+       justify-self: center;    
+    }
+
+    #contato-footer{
+        margin-top: 4%;
     }
 
     .footer-columns {
