@@ -29,6 +29,14 @@
   font-size: 1.5vw;
 }
 
+.icons-social a{
+  color: #ffff;
+}
+
+.icons-social:visited{
+  color: #ffff;
+}
+
 .title {
   font-size: 1.5vw;
   font-weight: 600;
