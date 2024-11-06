@@ -1,21 +1,26 @@
 <form action="/trabalhe-aqui" class="trabalheConosco" method="post">
+
     <div class="form">
         <label for="name">Nome</label>
-        <input type="text" name="name" id="" placeholder="digite seu nome completo">
+        <input class="w3-input w3-border" type="text" name="name" id="" placeholder="digite seu nome completo">
 
-        <label for="telefone"></label>
-        <input name="telefone" type="number">
+        <label for="telefone"> Telefone </label>
+        <input class="w3-input w3-border" name="telefone" placeholder="(xx) 9xxxx-xxxx" type="text">
 
-        <label for="email">email</label>
-        <input name="email" type="email">
+        <label for="email">Email</label>
+        <input class="w3-input w3-border" name="email" type="email" placeholder="digite o seu email profissional">
 
-        <label for="periodo">periodo</label>
-        <input name="periodo" type="number">
+        <label for="linkedin">Linkedin</label>
+        <input class="w3-input w3-border" name="linkedin" type="email" placeholder="digite o link do seu perfil no linkedin">
 
-        <label for="tecnologias">tecnologias</label>
-        <input name="tecnologias" type="text">
+        <label for="periodo">Periodo</label>
+        <input class="w3-input w3-border" name="periodo" type="number" placeholder="digite o seu período atual!">
 
-        <input type="submit" value="criar">
+        <label for="tecnologias">Tecnologias</label>
+        <textarea class="w3-input w3-border" id="" name="tecnologias"
+            placeholder="Digite aqui as principais stacks que você domina!"></textarea>
+
+        <input class="w3-button w3-black form-button" type="submit" value="enviar">
     </div>
 
 </form>

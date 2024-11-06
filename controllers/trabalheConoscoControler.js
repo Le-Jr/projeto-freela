@@ -1,6 +1,4 @@
 const Estudante = require("../models/Estudante")
-const Tecnologias = require("../models/Tecnologias")
-const Estudante_Tecnologias = require("../models/Estudante_Tecnologias")
 
 
 module.exports = class trabalheConoscoController {
