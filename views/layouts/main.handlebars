@@ -58,6 +58,11 @@
     </div>
   </header>
 
+  {{#if messages.message}}
+  <h1 class="message">
+    {{messages.message}}
+  </h1>
+  {{/if}}
   {{{body}}}
 
 
