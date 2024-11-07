@@ -1,7 +1,7 @@
 const { Sequelize } = require('sequelize');
 
-const db = new Sequelize('glob_globalnetworks', 'glob_globalnetworks', '', {
-    host: '',
+const db = new Sequelize('globalnetworks', 'root', '1234', {
+    host: 'localhost',
     dialect: 'mysql'
 });
 

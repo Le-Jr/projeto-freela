@@ -6,7 +6,21 @@
     gap: 24px;
 }
 
-.project {
+.projects-link {
+    color: none;
+    text-decoration: none;
+    font-weight: normal;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: inherit;
+}
+.projects-link:visited, .projects-link:hover, .projects-link:active {
+    cursor: pointer;           
+  }
+
+.projects-link>.project {
     background-image: url(../img//bahia.png);
     background-size: cover;
     background-position: center;
@@ -16,15 +30,15 @@
     border-radius: 5px;
 }
 
-.project:nth-child(2) {
+.projects-link:nth-child(2)>.project {
     background-image: url(../img//atelier.png);
 }
 
-.project:nth-child(3) {
+.projects-link:nth-child(3)>.project {
     background-image: url(../img//polo.png);
 }
 
-.project:nth-child(4) {
+.projects-link:nth-child(4)>.project {
     background-image: url(../img//rededorSite.png);
 }
 
@@ -66,19 +80,22 @@
     color: inherit;
 }
 
-@media screen and (min-width:1024px){
-    .project_fade:hover{
+@media screen and (min-width:1024px) {
+    .project_fade:hover {
         background-color: rgba(97, 93, 93, .95);
-        transition:.5s;
-     
+        transition: .5s;
+
     }
+
     .projects {
         flex-direction: row;
-        margin-bottom: 64px;
         justify-content: space-between;
+        max-width: 1400px;
+        margin: 64px auto 0;
     }
+
     .project {
         width: 420px;
     }
-    
+
 }

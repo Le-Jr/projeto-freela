@@ -1,4 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+a {
+  color:none;             
+  text-decoration: none;      
+  font-weight: normal;       
+  background: none;           
+  border: none;             
+  padding: 0;                
+  margin: 0;                   
+  cursor: inherit;            
+}
+
+a:visited, a:hover, a:active {
+  color: none;             
+  text-decoration: none;     
+  cursor: inherit;           
+}
 
 
 body,
@@ -247,5 +263,7 @@ dialog a{
   margin-top: 1em;
 }
 .trabalheConosco{
-  margin: 200px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 84px 24px 24px;
 }

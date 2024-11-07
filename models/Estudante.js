@@ -18,6 +18,12 @@ const Estudante = db.define(
         Periodo: {
             type: DataTypes.INTEGER,
         },
+        Linkedin: {
+            type: DataTypes.STRING,
+        },
+        Tecnologias: {
+            type: DataTypes.STRING,
+        },
        
     },
 );
