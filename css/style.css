@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
+
 body,
 h1,
 h2,
@@ -173,6 +174,10 @@ dialog a{
 }
 
 .btn-whatsapp {
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: fixed;
   bottom: 40px;
   right: 40px;
@@ -185,7 +190,13 @@ dialog a{
   height: 60px;
   box-shadow: 1px 1px 2px #888;
   text-align: center;
+  cursor: pointer;
+  .fa-whatsapp{
+    color: #FFF;
+  }
 }
+
+
 
 
 .barra {
@@ -245,4 +256,7 @@ dialog a{
 }
 .form-button{
   margin-top: 1em;
+}
+#myCarousel{
+  z-index: 0;
 }

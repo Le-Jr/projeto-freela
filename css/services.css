@@ -1,6 +1,12 @@
 .services-section{
     justify-items: center;
     margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 36px;
+    max-width: 1240px;
+    margin: 0 auto;
 }
 
 .servicesContent{
@@ -22,6 +28,8 @@
 }
 
 .servicesLinks{
+    border: 1px solid black;
+    border-radius: 15px;
     border: none;
     background-color: #ffff;
     font-weight: 600;
