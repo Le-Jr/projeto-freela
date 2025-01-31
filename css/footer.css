@@ -71,6 +71,7 @@
   margin-right: 5%;
   margin-top: -4rem;
   animation: scroll 3s ease infinite;
+  cursor: pointer;
 }
 
 @keyframes scroll {

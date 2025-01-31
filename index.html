@@ -558,19 +558,28 @@
 
     <!-- contato Section -->
     <div class="w3-container w3-light-grey" id="contato">
-      <h2 class="w3-center">contatos</h3>
+      <h2 class="w3-center">Contatos</h3>
         <p class="w3-center w3-large">Nos mande uma mensagem</p>
         <div class="form-contato">
           <!-- <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Celular: +55 21 97244-2720</p>
         <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: fgglobalnetworks@gmail.com</p> -->
           <br>
-          <form action="/action_page.php" id="contact-form" target="_blank">
-            <p><input class="w3-input w3-border" type="text" placeholder="Nome" required name="user_name"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="user_email"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Celular" required name="user_tel"></p>
+          <form id="contact-form" target="_blank">
+            <div>
+              <input class="w3-input w3-border inputs-form" type="text" placeholder="Nome" name="user_name">
+              <span class="span-required">Este campo é obrigatório</span>
+            </div>
+            <div>
+              <input class="w3-input w3-border inputs-form" type="text" placeholder="Email" name="user_email">
+              <span class="span-required">Insira um email válido</span>
+            </div>
+            <div>
+              <input class="w3-input w3-border inputs-form" type="text" placeholder="Celular" name="user_tel" maxlength="15"> 
+              <span class="span-required">Insira um número válido</span>
+            </div>
             <textarea class="w3-input w3-border" id="" name="user_details"
               placeholder="Digite aqui, o que deseja!"></textarea>
-            <!-- <p><input class="w3-input w3-border" type="" placeholder="Message" required name="Message"></p> -->
+            <!-- <p><input class="w3-input w3-border" type="" placeholder="Message" name="Message"></p> -->
             <p>
               <button class="w3-button w3-black form-button" type="submit">
                 <i class="fa fa-paper-plane"></i> Enviar mensagem
@@ -579,6 +588,21 @@
           </form>
         </div>
     </div>
+
+    <!-- Modal do formulario de contato--> 
+     <div id="modalContato" class="modalContato">
+      <div class="modalContatoContainer">
+        <div class="closeDiv">
+          <button class="closeBtn"><i class="fa fa-times"></i></button>
+        </div>
+        <div class="modalContatoContent">
+          <span id="modalIcon" class="material-symbols-outlined">
+            check_circle
+          </span>
+          <h2 class="w3-text-grey">Mensagem enviada com sucesso!</h2>
+        </div>
+      </div>
+     </div>
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 footer">
       <div class="footer-section-one">
