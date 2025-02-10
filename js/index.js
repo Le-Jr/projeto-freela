@@ -39,44 +39,40 @@ form.addEventListener("submit", (event) => {
   nameValidate();
   emailValidate();
   numValidate();
-  if (removeError()) {
-    // lançador de E-mails
-
-    emailjs.init({
-      publicKey: "dghQi-EOdR6yvYSzA",
-    });
-    emailjs.sendForm("contact_service", "contact_form");
-
-    window.onload = function enviaEmail() {
-      document
-        .getElementById("contact-form")
-        .addEventListener("submit", function (event) {
-          event.preventDefault();
-          console.log(emailjs);
-          emailjs.sendForm("service_ggficvm", "template_wkf10lt", this).then(
-            () => {
-              console.log("SUCCESS!");
-              modalContato.style.display = "block";
-            },
-            (error) => {
-              console.log("FAILED...", error);
-            }
-          );
-        });
-    };
-  }
 });
 
 function setError(index) {
   campos[index].setAttribute("style", "border-color:  #e63636 !important;");
   spans[index].style.visibility = "visible";
-  return true;
 }
 
 function removeError(index) {
   campos[index].style.border = "";
-  spans[index].style.display = "hidden";
-  return true;
+  spans[index].style.visibility = "hidden";
+  // lançador de E-mails
+
+  emailjs.init({
+    publicKey: "dghQi-EOdR6yvYSzA",
+  });
+  emailjs.sendForm("contact_service", "contact_form");
+
+  window.onload = function enviaEmail() {
+    document
+      .getElementById("contact-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault();
+        console.log(emailjs);
+        emailjs.sendForm("service_ggficvm", "template_wkf10lt", this).then(
+          () => {
+            console.log("SUCCESS!");
+            modalContato.style.display = "block";
+          },
+          (error) => {
+            console.log("FAILED...", error);
+          }
+        );
+      });
+  };
 }
 
 function nameValidate() {
