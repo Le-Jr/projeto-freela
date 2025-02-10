@@ -39,17 +39,22 @@ form.addEventListener("submit", (event) => {
   nameValidate();
   emailValidate();
   numValidate();
+  if (removeError()) {
+    enviaEmail();
+    modalContato.style.display = "block";
+  }
 });
 
 function setError(index) {
   campos[index].setAttribute("style", "border-color:  #e63636 !important;");
   spans[index].style.visibility = "visible";
+  return true;
 }
 
 function removeError(index) {
   campos[index].style.border = "";
   spans[index].style.display = "hidden";
-  enviaEmail();
+  return true;
 }
 
 function nameValidate() {
@@ -91,7 +96,6 @@ window.onload = function enviaEmail() {
       emailjs.sendForm("service_ggficvm", "template_wkf10lt", this).then(
         () => {
           console.log("SUCCESS!");
-          modalContato.style.display = "block";
         },
         (error) => {
           console.log("FAILED...", error);
