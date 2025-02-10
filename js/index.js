@@ -39,6 +39,11 @@ form.addEventListener("submit", (event) => {
   nameValidate();
   emailValidate();
   numValidate();
+  if (nameValidate() && emailValidate() && numValidate()) {
+    modalContato.style.display = "block";
+    enviaEmail();
+    form.reset();
+  }
 });
 
 function setError(index) {
@@ -49,30 +54,6 @@ function setError(index) {
 function removeError(index) {
   campos[index].style.border = "";
   spans[index].style.visibility = "hidden";
-  // lançador de E-mails
-
-  emailjs.init({
-    publicKey: "dghQi-EOdR6yvYSzA",
-  });
-  emailjs.sendForm("contact_service", "contact_form");
-
-  window.onload = function enviaEmail() {
-    document
-      .getElementById("contact-form")
-      .addEventListener("submit", function (event) {
-        event.preventDefault();
-        console.log(emailjs);
-        emailjs.sendForm("service_ggficvm", "template_wkf10lt", this).then(
-          () => {
-            console.log("SUCCESS!");
-            modalContato.style.display = "block";
-          },
-          (error) => {
-            console.log("FAILED...", error);
-          }
-        );
-      });
-  };
 }
 
 function nameValidate() {
@@ -80,6 +61,7 @@ function nameValidate() {
     setError(0);
   } else {
     removeError(0);
+    return true;
   }
 }
 
@@ -88,6 +70,7 @@ function emailValidate() {
     setError(1);
   } else {
     removeError(1);
+    return true;
   }
 }
 
@@ -96,7 +79,31 @@ function numValidate() {
     setError(2);
   } else {
     removeError(2);
+    return true;
   }
+}
+
+// lançador de E-mails
+
+emailjs.init({
+  publicKey: "dghQi-EOdR6yvYSzA",
+});
+emailjs.sendForm("contact_service", "contact_form");
+
+function enviaEmail() {
+  if (!form) {
+    console.log("Formulário não encontrado");
+  }
+
+  console.log(emailjs);
+  emailjs.sendForm("service_ggficvm", "template_wkf10lt", form).then(
+    () => {
+      console.log("SUCCESS!");
+    },
+    (error) => {
+      console.log("FAILED...", error);
+    }
+  );
 }
 
 // animação barra de competencia
