@@ -39,22 +39,18 @@ form.addEventListener("submit", (event) => {
   nameValidate();
   emailValidate();
   numValidate();
-  if (removeError()) {
-    enviaEmail();
-    modalContato.style.display = "block";
-  }
 });
 
 function setError(index) {
   campos[index].setAttribute("style", "border-color:  #e63636 !important;");
   spans[index].style.visibility = "visible";
-  return true;
 }
 
 function removeError(index) {
   campos[index].style.border = "";
   spans[index].style.display = "hidden";
-  return true;
+  emailjs.sendForm("contact_service", "contact_form");
+  modalContato.style.display = "block";
 }
 
 function nameValidate() {
@@ -85,7 +81,6 @@ function numValidate() {
 emailjs.init({
   publicKey: "dghQi-EOdR6yvYSzA",
 });
-emailjs.sendForm("contact_service", "contact_form");
 
 window.onload = function enviaEmail() {
   document
